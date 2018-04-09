@@ -4,7 +4,7 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
-  
+
     def print_courses
     self.make_courses
     Course.all.each do |course|
@@ -14,9 +14,8 @@ class Scraper
         puts "  Description: #{course.description}"
       end
     end
+
+    def get_page
   end
-  
+
 end
-
-
-
